@@ -1,8 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Todowoo</title>
+    <link rel="stylesheet"  href="static/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
@@ -24,10 +26,10 @@ Logged In as {{ user.username }}
           <a class="btn btn-outline-secondary" href="{% url 'createtodo' %}">Create</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-outline-secondary " href="{% url 'currenttodos' %}">Current</a>
+          <a class="button btn btn-outline-secondary " href="{% url 'currenttodos' %}">Current</a>
         </li>
           <li class="nav-item">
-          <a class="btn btn-outline-secondary " href="{% url 'completedtodos' %}">Completed</a>
+          <a class="button btn btn-outline-secondary " href="{% url 'completedtodos' %}">Completed</a>
         </li>
       </ul>
     </div>
